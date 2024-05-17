@@ -36,7 +36,7 @@ public class OdontologoDaoH2 implements IDao <Odontologo> {
                 odontologoGuardado.setId(resultSet.getLong("id"));
             }
             connection.commit();
-            LOGGER.info("Se ha registrado el Odontologo: " + odontologoGuardado);
+            LOGGER.info("Se ha registrado el Odontólogo: " + odontologoGuardado);
 
         } catch (Exception e) {
             LOGGER.error(e.getMessage());
@@ -95,7 +95,7 @@ public class OdontologoDaoH2 implements IDao <Odontologo> {
             }
         }
 
-        LOGGER.info("Listado de domicilios obtenido: " + odontologos);
+        LOGGER.info("Listado de Odontólogos obtenido: " + odontologos);
 
         return odontologos;
     }
